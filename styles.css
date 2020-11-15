@@ -11,7 +11,7 @@ html {
 
 body {
   /* font-family: "Poppins", sans-serif; */
- font-family: "albertan-pro", sans-serif;
+font-family: "albertan-pro", sans-serif;
 font-style: normal;
 font-weight: 200;  
 } 
@@ -19,6 +19,7 @@ font-weight: 200;
 h1 {
   font-size: 2.6rem;
 }
+
 li,
 button,
 label,
@@ -53,16 +54,15 @@ a:hover {
 
 button {
   padding: 2rem 6rem;
-  background: #f4832e;
+  background: #06333a;
   border: none;
   border-radius: 25px;
   color: white;
   font-size: 1.8rem;
-  cursor: pointer;
   transition: background 0.5s ease-in-out;
 }
 button:hover {
-  background: #06333a;
+  background: #f4832e;
 }
 
 /* Nav Section With HERO */
@@ -133,6 +133,10 @@ nav li {
   align-items: center;
   text-align: center;
 }
+
+.hero h2 {
+  color: #f4832e;
+}
 .hero h3 {
   padding: 5rem;
 }
@@ -146,24 +150,26 @@ nav li {
   width: 60%;
   color: white;
   border-radius: 20px;  background: rgba(19, 28, 39, 0.8); */
-
  }
 
  .about-head h2 {
   /* width: 90%; */
-  padding-top: 3rem;
+  /* padding: 1rem; */
   color: #f4832e;
   font-family: "albertan-pro", sans-serif;
   font-style: normal;
   font-weight: 200;  
+  font-size: 4rem;
   margin: auto;
   text-align: center;
 }
 
 #about {
   min-height: 95vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.75), transparent),
-    url("./img/mountain-goat.jpg");
+  /* background: linear-gradient(rgba(0, 0, 0, 0.75), transparent);
+  background-image: url("./img/mountain-goat.jpg"); */
+  background: linear-gradient(rgba(0, 0, 0, 0.75), transparent);
+  background-image: url("./img/about-background.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -174,38 +180,40 @@ nav li {
   color: #f4832e;
 }
 
-/* .about-head p { */
-  /* padding: 1rem 0rem; */
-  /* text-decoration: underline; */
-  /* text-align: center;
-  color: #e2e2e2; */
-  /* 
-  text-decoration-thickness: 0.5rem;
-  */
-/* } */
-.about-head-2 {
-  font-family: "Poppins", sans-serif;
-  height: 30%;
-width: 60%;
- padding: 50px;
-  margin: 100px;
- /* background: linear-gradient(#06333a, #f4832e);  */
-  background: linear-gradient(rgba(0, 0, 0, 0.85), transparent);
+.about-head { 
+  /* padding: 1rem 0rem;  */
+  /* text-decoration: underline;  */
+  text-align: center;
   color: #e2e2e2;
-  font-weight: lighter;
-  font-size: 1rem;
 }
 
-.about-head-2 h4 {
+.about-head-2 {
+  font-family: "Montserrat", sans-serif;
+  width: 95%; 
+ padding: 20px;
+  margin: 10px 100px 10px; 
+  /* padding: 20px 100px 20px; 
+  margin: 50px; */
+  display: flex;
+  /* align-items: center;  */
+  /* background: linear-gradient(6333a, #f4832e);  */
+  background: linear-gradient(rgba(0, 0, 0, 0.85), transparent);
+  border-radius: 20px;
+  color: #e2e2e2;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+/* .about-head-2 h4 {
   font-family: "albertan-pro", sans-serif;
   font-style: normal;
   font-weight: 200;  
   padding-top: 30px;
-  padding-botton: 15px;
+  padding-button: 15px;
   color: #f4832e;
-}
+} */
 
-.cloud {
+/* .cloud {
   position: absolute;
   top: 0%;
   right: 0%;
@@ -217,10 +225,10 @@ width: 60%;
   top: 20%;
   z-index: -1;
   opacity: 0.5;
-  animation: cloudAnimation 3.5s infinite alternate ease-in-out;
+  animation: cloudAnimation 3.5s infinite alternate ease-in-out; 
 }
 /* Cloud Animation */
-
+/* 
 @keyframes cloudAnimation {
   from {
     transform: translate(10%, -10%);
@@ -228,14 +236,18 @@ width: 60%;
   to {
     transform: translate(0%, 0%);
   }
-}
+} */
 
 /* therapists section*/
 
+#services {
+  background-color: #f4832e;
+}
+
 .services-head {
   background: #f4832e;
-  padding: 3rem;
-  min-height: 30vh;
+  padding: 1rem; 
+  /* min-height: 30vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -243,20 +255,24 @@ width: 60%;
   color: #06333a;
   text-align: center;
 }
-.services-head h3 {
-  padding: 1rem;
+.services-head h2 {
+  padding: .5rem;
 }
 
 .cards {
   width: 90%;
   margin: auto;
   display: flex;
-  min-height: 70vh;
+  min-height: 75vh;
   align-items: center;
   flex-wrap: wrap;
-}
+} 
 
 .card {
+  font-family: "Montserrat", sans-serif;
+  border-radius: 20px;
+  background-color: #e2e2e2;
+  color: #06333a;
   text-align: center;
   flex: 1 1 25rem;
   min-height: 40vh;
@@ -264,18 +280,33 @@ width: 60%;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
-.cards img {
+/* .cards img {
+  float: center;
   max-width: 15%;
-  margin: 2rem;
-}
+  margin: 2rem; */
+/* }   */
 .card h4,
 .card p {
+  margin-left: 20px;
+  margin-right: 20px;
   padding: 1rem;
   line-height: 1.8;
 }
 
-.card-icon {
+.more {
+  color: #06333a;
+}
+
+.more:hover {
+  color: #f4832e;
+}
+
+.card img {
+  align-items: center;
+  max-width: 15%;
+  margin: 2rem;
   background: #06333a;
+  border-radius: 50%; 
 }
 
 /* Contact Section */
@@ -289,6 +320,7 @@ width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 25px;
 }
 
 .form-wrapper {
@@ -301,24 +333,50 @@ width: 60%;
   text-align: center;
   padding: 4rem;
 }
+.content {
+  font-family: "Montserrat", sans-serif;
+  padding: 0rem 4rem 0rem;
+  margin: 0rem 3rem;
+  font-size: 2rem;
+}
+i {
+  font-size: 3rem;
+  color: #f4832e;
+  padding-right: 10px;
+}
+
+img { 
+  font-family: "Montserrat", sans-serif; 
+  align-items: flex-start;
+  size: 20%;
+}
 .name-form,
 .email-form {
+  font-family: "Montserrat", sans-serif; 
   padding: 3rem;
   text-align: center;
-}
+} 
+
 .form-wrapper label {
   margin: 0rem 3rem;
 }
 .form-wrapper button {
-  width: 100%;
+  width: 50%;
   padding: 2rem;
-  margin-top: 8rem;
+  margin-top: 1rem;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  background-color: #f4832e;
+  color: #e2e2e2;
 }
 
-.form-wrapper input {
+.form-wrapper button:hover {
+  background-color: #06333a;
+}
+
+.form-wrapper content {
   padding: 1rem 3rem;
+  margin: 20%;
 }
 
 /* Footer Section */
@@ -336,24 +394,25 @@ footer {
   min-height: 10vh;
   flex-wrap: wrap;
 }
-footer h5 {
+h5 {
   flex: 1 1 40rem;
   /* padding-top: 1rem; */
 }
-footer ul {
+ul {
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
   display: flex;
   list-style: none;
   flex: 1 1 40rem;
   justify-content: space-between;
   align-items: center;
 }
-footer a {
-  color: #e2e2e2;
-}
-footer a:hover{
+i {
   color: #f4832e;
+}
+
+i:hover{
+  color: #e2e2e2;
 }
 
 
