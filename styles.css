@@ -158,6 +158,7 @@ nav ul {
 }
 
 nav li {
+  padding: 10px;
   font-size: 2.3rem;
 }
 
@@ -472,7 +473,7 @@ i:hover{
 
 /* Button focus to make website accessible */
 
-button:focus {
+button:focus 
   background: #2c3f57;
   outline-style: solid;
   outline-color: cornflowerblue;
