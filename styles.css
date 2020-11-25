@@ -82,11 +82,11 @@ p {
   font-size: 2rem;
 }
 h2 {
-  font-size: 4.8rem;
+  font-size: 4.4rem;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: normal;
   font-family: "Montserrat", sans-serif;
 }
@@ -158,7 +158,7 @@ nav ul {
 }
 
 nav li {
-  padding: 10px;
+  padding: 5px;
   font-size: 2.3rem;
 }
 
@@ -191,9 +191,11 @@ nav li {
 
 .hero h2 {
   color: #f4832e;
+  font-size: 4.7rem;
 }
 .hero h3 {
   padding: 5rem;
+  font-size: 2.5rem;
 }
 
 /* ABOUT SECTION */
@@ -201,11 +203,10 @@ nav li {
 .about-wrapper {
   padding-top:  25px;
   background: #06333a;
-  /* background: rgba(19, 28, 39, 0.8);
-  width: 60%;
-  color: white;
-  border-radius: 20px;  background: rgba(19, 28, 39, 0.8); */
- }
+  /* background: rgba(19, 28, 39, 0.8); */
+  /* width: 60%;
+  color: white; */
+}
 
  .about-head h2 {
   /* width: 90%; */
@@ -221,6 +222,7 @@ nav li {
 
 #about {
   min-height: 95vh;
+  min-width: 75vw;
   /* background: linear-gradient(rgba(0, 0, 0, 0.75), transparent);
   background-image: url("./img/mountain-goat.jpg"); */
   background: linear-gradient(rgba(0, 0, 0, 0.75), transparent);
@@ -231,7 +233,7 @@ nav li {
   align-items: center;
   position: relative;
   overflow: hidden;
-  /* padding: 25px;  */
+  padding: 25px;  
   color: #f4832e;
 }
 
@@ -240,23 +242,24 @@ nav li {
   /* text-decoration: underline;  */
   text-align: center;
   color: #e2e2e2;
+  font-size: 1rem; 
 }
 
 .about-head-2 {
   font-family: "Montserrat", sans-serif;
   width: 95%; 
- padding: 20px;
-  margin: 10px 100px 10px; 
-  /* padding: 20px 100px 20px; 
-  margin: 50px; */
+ /* padding: 20px;
+  margin: 10px 75px 10px;  */
+  padding: 20px 100px 20px; 
+  margin: 10px;
   display: flex;
-  /* align-items: center;  */
+  align-items: center;  
   /* background: linear-gradient(6333a, #f4832e);  */
   background: linear-gradient(rgba(0, 0, 0, 0.85), transparent);
   border-radius: 20px;
   color: #e2e2e2;
   font-weight: lighter;
-  font-size: 12px;
+  line-height: 2.8rem;
 }
 
 /* .about-head-2 h4 {
@@ -330,22 +333,23 @@ nav li {
   color: #06333a;
   text-align: center;
   flex: 1 1 25rem;
-  min-height: 40vh;
-  margin: 2rem 5rem;
+  min-height: 50vh;
+  margin: rem 5rem;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* .cards img {
   float: center;
   max-width: 15%;
-  margin: 2rem; */
-/* }   */
-.card h4,
-.card p {
+  margin: 2rem; 
+}  */
+.card p { 
+  font-size: 2rem;
   margin-left: 20px;
   margin-right: 20px;
-  padding: 1rem;
-  line-height: 1.8;
+  padding-top: 20px;
+  line-height: 2.4rem;
+  min-width: 50%;
 }
 
 .more {
@@ -375,12 +379,14 @@ nav li {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px;
+  /* padding: 25px; */
+  padding: 15px;
 }
+
 
 .form-wrapper {
   background: rgba(19, 28, 39, 0.8);
-  width: 60%;
+  width: 80%;
   color: white;
   border-radius: 20px;
 }
@@ -392,7 +398,6 @@ nav li {
   font-family: "Montserrat", sans-serif;
   padding: 0rem 4rem 0rem;
   margin: 0rem 3rem;
-  font-size: 2rem;
 }
 i {
   font-size: 3rem;
@@ -473,7 +478,7 @@ i:hover{
 
 /* Button focus to make website accessible */
 
-button:focus 
+button:focus {
   background: #2c3f57;
   outline-style: solid;
   outline-color: cornflowerblue;
@@ -490,16 +495,7 @@ button:focus
   #logo {
     padding: 2rem;
   }
-  .cloud {
-    height: 40rem;
-    pointer-events: none;
-  }
-  .moving-cloud-1 {
-    z-index: -1;
-  }
-  .moving-cloud-2 {
-    z-index: -2;
-  }
+
   .locations-head h3 {
     background: rgba(19, 28, 39, 0.9);
     -webkit-text-fill-color: white;
