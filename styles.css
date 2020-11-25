@@ -201,7 +201,7 @@ nav li {
 /* ABOUT SECTION */
 
 .about-wrapper {
-  padding-top:  25px;
+  padding-top:  35px; 
   background: #06333a;
   /* background: rgba(19, 28, 39, 0.8); */
   /* width: 60%;
@@ -209,20 +209,20 @@ nav li {
 }
 
  .about-head h2 {
-  /* width: 90%; */
-  /* padding: 1rem; */
+  width: 90%;
+  /* padding: 1rem;  */
   color: #f4832e;
   font-family: "albertan-pro", sans-serif;
   font-style: normal;
   font-weight: 200;  
-  font-size: 4rem;
+  /* font-size: 4rem; */
   margin: auto;
   text-align: center;
 }
 
 #about {
-  min-height: 95vh;
-  min-width: 75vw;
+  min-height: 100vh;
+  min-width: 50vw;
   /* background: linear-gradient(rgba(0, 0, 0, 0.75), transparent);
   background-image: url("./img/mountain-goat.jpg"); */
   background: linear-gradient(rgba(0, 0, 0, 0.75), transparent);
@@ -251,7 +251,7 @@ nav li {
  /* padding: 20px;
   margin: 10px 75px 10px;  */
   padding: 20px 100px 20px; 
-  margin: 10px;
+  /* margin: 10px; */
   display: flex;
   align-items: center;  
   /* background: linear-gradient(6333a, #f4832e);  */
