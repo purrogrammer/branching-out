@@ -162,6 +162,19 @@ nav li {
   font-size: 2.3rem;
 }
 
+.slicknav_menu {
+  display:none;
+}
+
+@media (max-width: 600px) {
+  .menu-navigation-basic{
+      display:none;
+  }
+
+  .slicknav_menu {
+      display:block;
+  }
+}
 
 /* #logo {
   flex: 2 1 40rem; */

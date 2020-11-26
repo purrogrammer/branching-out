@@ -5,8 +5,6 @@
     Logo design by Margot Elyse Cannon
     All photos copyright Chris Sully, 2018, used with permission -->
 
-
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -14,6 +12,7 @@
       name="description"
       content="Branching Out Wellbeing Mental Health Services, LGBTQ, sex therapy, alternative relationships, polyamory, gender, anxiety specialists located in King County, Washington"
     />
+    <meta name="keywords" content="Mental health, therapist, LGBTQ, transgender, sex therapy, ethical non-monogamy, polyamory, alternative relationship styles, couples counseling, Seattle, Renton, Kent, King County, Pierce County, Washington State, therapist, depression, anxiety">
     <meta name="robots" content="index,follow" />
 
 <!-- 
@@ -28,23 +27,28 @@
  as="style">
    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" as="style">
    <link href="fontawesome/css/all.min.css" rel="stylesheet"> 
+   <link rel="stylesheet" href="slicknav/slicknav.min.css">
    <link rel="stylesheet" href="styles.css" />
+
     <title>Branching Out Wellbeing | Mental Health Therapists</title>
   </head>
+
   <body>
+
     <header class="main-head">
-      <nav>
-        <!-- <h1 id="logo"> -->
+      <nav class="menu-navigation-basic">
+              <!-- <h1 id="logo"> -->
           <div class="logo"> 
           <img src="./img/logo-heads-vsm3.png" alt="logo"  /> 
           </div>
         <!-- </h1> -->
         <ul>
-          <li><a href="#about">About   </a></li></li>
+          <li><a href="#about">About   </a></li>
           <li><a href="#services">Therapists   </a></li>
           <li><a href="#contact">  Contact</a></li>
         </ul>
       </nav>
+
     </header>
     <main>
       <section class="hero">
@@ -188,14 +192,39 @@
              </div>
              <h5> &copy; 2020 Branching Out Wellbeing</h5>
     </footer>
+
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFFSNN17N9"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFFSNN17N9"></script>
   <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-CFFSNN17N9');
-  </script> -->
+  </script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="slicknav/jquery.slicknav.min.js"></script>
+
+<script>
+
+  $(function(){
+
+        var menu = $('.menu-navigation-basic');
+
+        menu.slicknav();
+
+        // Mark the clicked item as selected
+
+        menu.on('click', 'a', function(){
+            var a = $(this);
+
+            a.siblings().removeClass('selected');
+            a.addClass('selected');
+        });
+    });
+    
+</script>
 
   </body>
 </html>
