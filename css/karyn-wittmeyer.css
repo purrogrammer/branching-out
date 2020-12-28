@@ -2,7 +2,7 @@
     box-sizing: border-box;
   }
   
-  /* Create two equal columns that floats next to each other */
+  /* Create two equal columns that float next to each other */
   #about {
       display: block;
   }
@@ -38,7 +38,7 @@
   
   
 .about-body ul {
-        display: inline-block;
+  display: inline-block;
     flex-direction: column;
     flex-wrap: wrap;
     margin-left: 25px;
