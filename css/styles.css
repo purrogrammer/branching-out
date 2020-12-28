@@ -99,7 +99,7 @@ h5 {
   font-size: 1.8rem;
 }
 a {
-  color: white;
+  color: #e2e2e2;
   text-decoration: none;
 }
 a:hover {
@@ -161,6 +161,13 @@ nav li {
   padding: 5px;
   font-size: 2.3rem;
 }
+ nav .start-link {
+   color: #f4832e;
+ }
+
+ nav .start-link:hover {
+   color: #e2e2e2;
+ }
 
 .slicknav_menu {
   display:none;
@@ -189,8 +196,8 @@ nav li {
 
 .hero {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
-    url("./img/landing-page.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+    url("../../img/landing-page.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -212,34 +219,11 @@ nav li {
 }
 
 /* ABOUT SECTION */
-
-.about-wrapper {
-  padding-top:  35px; 
-  background: #06333a;
-  /* background: rgba(19, 28, 39, 0.8); */
-  /* width: 60%;
-  color: white; */
-}
-
- .about-head h2 {
-  width: 90%;
-  /* padding: 1rem;  */
-  color: #f4832e;
-  font-family: "albertan-pro", sans-serif;
-  font-style: normal;
-  font-weight: 200;  
-  /* font-size: 4rem; */
-  margin: auto;
-  text-align: center;
-}
-
 #about {
   min-height: 100vh;
   min-width: 50vw;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.75), transparent);
-  background-image: url("./img/mountain-goat.jpg"); */
   background: linear-gradient(rgba(0, 0, 0, 0.75), transparent);
-  background-image: url("./img/about-background.png");
+  background-image: url("../../img/about-background.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -250,20 +234,41 @@ nav li {
   color: #f4832e;
 }
 
-.about-head { 
-  /* padding: 1rem 0rem;  */
-  /* text-decoration: underline;  */
+.about-wrapper {
+  padding-top: 20px; 
+  background: #06333a;
+}
+
+.about-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: #e2e2e2;
   font-size: 1rem; 
 }
 
+.about-head h2 {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem; 
+  color: #f4832e;
+  font-family: "albertan-pro", sans-serif;
+  font-style: normal;
+  font-weight: 200;  
+} 
+
 .about-head-2 {
   font-family: "Montserrat", sans-serif;
-  width: 95%; 
+  width: 90%; 
  /* padding: 20px;
   margin: 10px 75px 10px;  */
   padding: 20px 100px 20px; 
+  margin-left: 30px;
   /* margin: 10px; */
   display: flex;
   align-items: center;  
@@ -386,7 +391,7 @@ nav li {
 #contact {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-    url("./img/mountain-side.jpg");
+    url("../../img/mountain-side.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -396,12 +401,12 @@ nav li {
   padding: 15px;
 }
 
-
 .form-wrapper {
   background: rgba(19, 28, 39, 0.8);
   width: 80%;
   color: white;
   border-radius: 20px;
+  /* line-height: 4rem; */
 }
 .form-head {
   text-align: center;
@@ -424,33 +429,49 @@ img {
   size: 20%;
 }
 .name-form,
-.email-form {
+.email-form,
+.starting-btn {
   font-family: "Montserrat", sans-serif; 
   padding: 3rem;
   text-align: center;
 } 
-
+.form-wrapper content {
+  padding: 1rem 3rem;
+  margin: 20%;
+}
 .form-wrapper label {
   margin: 0rem 3rem;
 }
-.form-wrapper button {
+
+.form-wrapper .starting-btn button {
   width: 50%;
   padding: 2rem;
   margin-top: 1rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #107c8d;
+  color: #e2e2e2;
+}
+.form-wrapper .starting-btn button:hover {
+  background-color: #06333a;
+}
+
+
+.form-wrapper .name-form button {
+  width: 50%;
+  padding: 2rem;
+  /* margin-top: 1rem; */
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: #f4832e;
   color: #e2e2e2;
 }
 
-.form-wrapper button:hover {
+.form-wrapper .name-form button:hover {
   background-color: #06333a;
 }
 
-.form-wrapper content {
-  padding: 1rem 3rem;
-  margin: 20%;
-}
+
 
 /* Footer Section */
 
