@@ -156,10 +156,10 @@ header h1 {
     justify-content: space-between;
 	/* border: 1px solid gray; */
 	margin: 12px;
-    padding: 20px;
+    padding: 12px;
     text-align: center;
     align-items: center;
-    font-family: 'Open', sans-serif;f;
+    font-family: 'Open', sans-serif;
 }
 
 .column:hover {
@@ -294,7 +294,7 @@ img .img-circle .img-responsive  {
 
   /* END Contact Section  */
 
-
+/* 
 @media screen and (max-width: 980px) {
   .columns .column {
 		margin-bottom: 5px;
@@ -308,7 +308,7 @@ img .img-circle .img-responsive  {
 		margin: 0 0 5px 0;
 	}
 }
-
+ */
 
 
  /* #############    END timeline section #########  */
