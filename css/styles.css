@@ -432,7 +432,7 @@ img {
 .email-form,
 .starting-btn {
   font-family: "Montserrat", sans-serif; 
-  padding: 3rem;
+  padding: 1.5rem;
   text-align: center;
 } 
 .form-wrapper content {
@@ -460,6 +460,7 @@ img {
 .form-wrapper .name-form button {
   width: 50%;
   padding: 2rem;
+  margin-bottom: 15px;
   /* margin-top: 1rem; */
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;

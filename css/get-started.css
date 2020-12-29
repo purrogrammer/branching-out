@@ -227,7 +227,7 @@ img .img-circle .img-responsive  {
 #contact {
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-      url("../../img/ck-mountain.jpg");
+      url("https://i.ibb.co/SfDkppN/OLYMPUS-DIGITAL-CAMERA.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -238,10 +238,12 @@ img .img-circle .img-responsive  {
   }
     
   .form-wrapper {
-    background: rgba(19, 28, 39, 0.8);
-    width: 80%;
+     background: rgba(19, 28, 39, 0.8);
+    width: 90%;
     color: white;
     border-radius: 20px;
+    align-items: center;
+    justify-content: center;
   }
   .form-head {
     text-align: center;
@@ -294,7 +296,7 @@ img .img-circle .img-responsive  {
 
   /* END Contact Section  */
 
-/* 
+
 @media screen and (max-width: 980px) {
   .columns .column {
 		margin-bottom: 5px;
@@ -308,7 +310,7 @@ img .img-circle .img-responsive  {
 		margin: 0 0 5px 0;
 	}
 }
- */
+
 
 
  /* #############    END timeline section #########  */
