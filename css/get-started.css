@@ -108,7 +108,7 @@ nav li {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   .menu-navigation-basic{
       display:none;
   }
@@ -279,8 +279,9 @@ img .img-circle .img-responsive  {
     width: 50%;
     padding: 2rem;
     margin-top: 1rem;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 9999px;
+    /* border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
     background-color: #f4832e;
     color: #e2e2e2;
   }
