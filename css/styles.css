@@ -290,18 +290,10 @@ nav li {
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  /* margin-left: 5px;
-  margin-right: 5px; */
+  font-size: 1.5rem;
+  line-height: 1.5;
  }
 
-/* .about-head-2 h4 {
-  font-family: "albertan-pro", sans-serif;
-  font-style: normal;
-  font-weight: 200;  
-  padding-top: 30px;
-  padding-button: 15px;
-  color: #f4832e;
-} */
 
 /* .cloud {
   position: absolute;
@@ -406,7 +398,7 @@ nav li {
 #contact {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-    url("../../img/mountain-side.jpg");
+    url("https://i.ibb.co/P5hMYyb/mountain-side.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -521,9 +513,12 @@ footer {
 h5 {
   flex: 1 1 40rem;
   text-align: center;
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-size: 1.5rem;
 }
 ul {
-  padding: 2rem;
+  padding: 1rem;
   font-size: 3rem;
   display: flex;
   list-style: none;
@@ -567,7 +562,7 @@ button:focus {
     margin-top: 15px;
   }
   .about-head-2 {
-    width: 400px;
+    max-width: 60ch;
     padding-left: 35px;
     padding-right: 25px;
     margin-left: 25px;
@@ -580,7 +575,7 @@ button:focus {
     margin: 15px 30px 0 30px;
     padding: 15px 30px 0 30px;
     border: none;
-    font-size: 14px;
+    font-size: 2.5rem;
   }
 
   #services {

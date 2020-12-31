@@ -1,59 +1,78 @@
-* {
-    box-sizing: border-box;
-  }
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700);
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
   
   /* Create two equal columns that float next to each other */
   #about {
-      display: block;
-  }
-  
-  .about-body {
-      display: flex;
-   
-      /* align-content: center; */
-      /* align-items: left; */
-      width: 100%; 
-      /* padding: 20px;
-       margin: 10px 75px 10px;  */
-       padding: 20px 100px 20px; 
-  }
-
-  .about-body .row {
-    width: inherit;
       display: flex;
       flex-direction: column;
-    
+      /* align-items: center; */
+      /* min-width: 100vw; */
+      min-height: auto;
   }
-  .about-body .row .column {
-      width: auto;
-      height: auto;
-      align-items: center;
-}
+  .about-head-2 {
+   padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 
-  .about-body h2 {
-     padding: 15px 7px 0 7px;
-      font-size: 3rem;
-      text-align: center;
+  .about-head-2 p {
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    margin-bottom: p;
+    margin-right: 20px;
+    margin-left: 20px;
+    min-height: none;
   }
-  
-  
+
+  .about-body {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
+    url("https://i.ibb.co/X7ZvZXH/mountain-goat.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+     width: 100%; 
+     text-align: center;
+
+  }
+  .about-body h2 {
+    padding: 15px 7px 0 7px;
+     font-size: 2.5rem;
+     text-align: center;
+ }
+
+.about-body .row {
+   display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
+      }
+.about-body .row .column {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 15px;
+} 
+
 .about-body ul {
   display: inline-block;
-    flex-direction: column;
-    flex-wrap: wrap;
     margin-left: 25px;
       text-align: left;
       list-style: inside;
       font-weight: 500;
-      /* margin: 0px 5px 10px 15px; */
-}
-
-
-.about-body .row .column ul li {
+    }
+.about-body .row ul li {
   color: #06333a;
   text-align: left; 
   list-style-type: circle;
   height: auto; 
   margin: 10px 0;
    font-family: "Montserrat", sans-serif;
+   font-size: 1.5rem;
  }
