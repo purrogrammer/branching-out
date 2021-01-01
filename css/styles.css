@@ -159,10 +159,8 @@ nav ul {
 
 nav li {
   padding: 5px;
-  font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: .1rem;
-  font-weight: 200;
+  letter-spacing: .15rem;
+  font-weight: 500;
 }
  nav .start-link {
    color: #f4832e;
