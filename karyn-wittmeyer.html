@@ -25,18 +25,11 @@
     <meta property="og:image:width" content="2400" />
     <meta property="og:image:height" content="1256" />
 
-    <!-- Bootstrap CDNs  -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 
-</head>
-
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
    <link href="fontawesome/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/karyn-wittmeyer.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Karyn Wittmeyer | Mental Health Therapist</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -48,10 +41,11 @@
 
   gtag('config', 'G-CFFSNN17N9');
 </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <!-- NAVBAR START  -->
-
+    <!--old NAVBAR START  -->
 
     <header class="main-head">
       <nav>
@@ -61,14 +55,42 @@
         <ul>
           <li><a href="index.html">Home </a></li>
           <li><a href="#contact">  Contact</a></li>
-          <li><a href="get-started.html/"> Get Started </a></li>
+          <li><a href="get-started.html"> Get Started </a></li>
              </ul>
       </nav>
     </header>
     <main>
-    <!-- END NAV  
+
+<header>
  
-<-- ###########  Start ABOUT SECTION  ########### -->
+<!--================== START NAV ============= -->
+
+<!-- <header>
+    <div class="container">
+    
+      <img class="logo" img src="img/logo-heads-vsm3.png">
+  
+      <nav class="site-nav">
+            <ul>
+            <li><a href=""><i class="fa fa-home site-nav--icon"></i>Home</a></li> 
+            <li><a href=""><i class="fa fa-info site-nav--icon"></i>About</a></li>
+            <li><a href=""><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
+            <li><a href=""><i class="fa fa-pencil site-nav--icon"></i>Get Started</a></li>
+          </ul> 
+      </nav>
+      
+      <div class="menu-toggle">
+        <div class="hamburger"></div>
+      </div>
+      
+    </div>
+   
+    </header> -->
+
+    <!-- =============== END NAV ================= -->
+
+
+ <!-- ###########  Start ABOUT SECTION  ########### -->
     
       <div class="about-wrapper">   
 
@@ -146,9 +168,9 @@
      <section id="contact">
 
         <div class="form-wrapper">
-          <header class="form-head">
+          <div class="form-head">
             <h2>Contact Us</h2>
-          </header>
+          </div>
           <div class="content"> 
             <p> 
                 <i class="fas fa-phone-alt"></i>            206-278-2288</p> <br><br>
@@ -193,8 +215,12 @@
                <h5> &copy; 2020 Branching Out Wellbeing</h5>
       </footer>
            
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
-<script src="slicknav/jquery.slicknav.min.js"></script>
+      <script>  
+          $('.menu-toggle').click(function() {
+                $('.site-nav').toggleClass('site-nav--open', 500);
+              $(this).toggleClass('open');
+                    })
+                  </script>
     </body>
   </html>
   

@@ -24,7 +24,7 @@
    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" as="style">
    
    <!-- navbar css -->
-   <link rel="stylesheet" href="slicknav/slicknav.min.css">
+   <!-- <link rel="stylesheet" href="slicknav/slicknav.min.css"> -->
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
   gtag('js', new Date());
   gtag('config', 'G-CFFSNN17N9');
   </script>
-
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -81,9 +81,9 @@
 
 <div class="wrapper-starting">
 
-    <header>
+  
       <h1>How to Get Started</h1>
-    </header>
+
       
   <section class="columns">
     
@@ -123,7 +123,7 @@
 <section id="contact">
 
     <div class="form-wrapper">
-      <header class="form-head">
+      <div class="form-head">
         <h2>Contact Us</h2>
       </header>
       <div class="content"> 
@@ -183,7 +183,7 @@
 
 
 
-<script>
+<!-- <script>
 
   $(function(){
 
@@ -200,10 +200,16 @@
             a.addClass('selected');
         });
     });
-  </script>
+  </script> -->
+  <script>  
+    $('.menu-toggle').click(function() {
+          $('.site-nav').toggleClass('site-nav--open', 500);
+        $(this).toggleClass('open');
+              })
+            </script>
      
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
-<script src="slicknav/jquery.slicknav.min.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+<script src="slicknav/jquery.slicknav.min.js"></script> -->
     
 
 </body>

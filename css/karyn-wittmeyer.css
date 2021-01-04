@@ -7,6 +7,16 @@
   box-sizing: border-box;
 }
 
+
+.main-head nav ul li {
+  display: flex;
+  text-align: right;
+  align-items: center;
+  margin-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 4rem;
+}
+
   
   /* Create two equal columns that float next to each other */
   #about {
@@ -28,8 +38,8 @@
    text-align: left; 
    flex-direction: row;
      align-items: top;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 0px;
     margin-bottom: 0;
     margin-right: 20px;
