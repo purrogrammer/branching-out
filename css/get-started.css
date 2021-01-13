@@ -93,14 +93,16 @@ nav .logo {
 nav ul {
   display: flex;
   flex: 1 1 40rem;
-  justify-content: space-around;
+  justify-content: space-between;
+  text-align: center;
   align-items: center;
   list-style: none;
   color: #f4832e;
 }
 
 nav li {
-  padding: 5px;
+  padding-left: 1rem;;
+  margin-right: 2rem;
   font-size: 2.3rem;
 }
 
