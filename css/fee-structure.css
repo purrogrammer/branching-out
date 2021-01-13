@@ -5,12 +5,22 @@
     width: 250px;
     height: 250px;
   } */
+
+  .about-head-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 50ch;
+    margin: 2rem;
+    padding: 2px;
+}
 .about-head-2 p {
     display:inline-flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    min-width: 50ch;
+    max-width: 50ch;
     margin: 2rem;
     padding: 2px;
 }
