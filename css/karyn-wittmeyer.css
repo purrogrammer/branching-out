@@ -33,6 +33,10 @@
     margin-left: 20px;
   }
 
+  .main-head {
+    background-color: #06333a;
+}
+
   .about-head-2 p {
     box-sizing: border-box;
    text-align: left; 
@@ -53,7 +57,13 @@
     margin: 10px;  
     padding-right: 2rem;
   }
+  .about-head-2 p a {
+    color: #f4832e;
+}
 
+.about-head-2 p a:hover {
+  color: #ade634;
+}
   .about-body {
     background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
     url("https://i.ibb.co/X7ZvZXH/mountain-goat.jpg");
