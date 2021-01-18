@@ -23,8 +23,6 @@
  as="style">
    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" as="style">
    
-   <!-- navbar css -->
-   <!-- <link rel="stylesheet" href="slicknav/slicknav.min.css"> -->
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -66,17 +64,20 @@
             <div class="logo"> 
           <img src="./img/logo-heads-vsm3.png" alt="logo"  /> 
           </div>
+
+          
         <ul>
-          <li><a href="https://www.branchingoutwellbeing.com/">Home   </a></li>
+          <li><a href="index.html/">Home   </a></li>
+          <li><a href="karyn-wittmeyer.html">About</a></li>
                 <li><a href="#contact">  Contact</a></li>
-                <li><a href="fee-structure.html">Fees</a></li>
+             
        
         </ul>
       </nav>
 
     </header>
 
-    <main>
+    <!-- ==============new  -->
 
 <!-- ##############  NEW TIMELINE ####### -->
 
@@ -183,31 +184,23 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 
+    <!-- 
+    Navbar script  -->
+<script>
+    const menuToggle = document.querySelector('.toggle');
+       menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+   
+    })
 
-<!-- <script>
+  </script>
 
-  $(function(){
-
-        var menu = $('.menu-navigation-basic');
-
-        menu.slicknav();
-
-        // Mark the clicked item as selected
-
-        menu.on('click', 'a', function(){
-            var a = $(this);
-
-            a.siblings().removeClass('selected');
-            a.addClass('selected');
-        });
-    });
-  </script> -->
-  <script>  
+  <!-- <script>  
     $('.menu-toggle').click(function() {
           $('.site-nav').toggleClass('site-nav--open', 500);
         $(this).toggleClass('open');
               })
-            </script>
+            </script> -->
      
 <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
 <script src="slicknav/jquery.slicknav.min.js"></script> -->
