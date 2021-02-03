@@ -124,6 +124,27 @@ h4 {
     font-size: 9px;
 } */
 
+
+#contact-pop { 
+  font-size: 12px; 
+    -webkit-user-select: none;       
+-moz-user-select: none; 
+-ms-user-select: none; 
+margin: 5em auto;
+width: 100px; 
+height: 30px; 
+line-height: 30px;
+font-weight: 700;
+text-align: center;
+cursor: pointer;
+/* text-transform: uppercase; */
+z-index: 10;
+border-radius: 999px;
+top: 1;
+right: 1;
+position: sticky;
+}
+
 #contact-pop:hover { background: #666; }
 #contact-pop:active { background: #444; }
 
